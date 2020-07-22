@@ -1,0 +1,113 @@
+[global/wm]
+margin-bottom = 0
+margin-top = 0
+
+include-file = ~/.config/polybar/themes/polybar_1/colors.ini
+include-file = ~/.config/polybar/themes/polybar_1/modules.ini
+
+[bar/main]
+monitor =
+monitor-fallback =
+
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+
+fixed-center = true
+
+width = 100%
+height = 26
+
+offset-x = 0
+offset-y = 0
+
+background = ${color.bg}
+foreground = ${color.fg}
+
+radius-top = 0.0
+radius-bottom = 0.0
+
+padding = 3
+
+module-margin-left = 3
+module-margin-right = 3
+
+font-0 = "Cantarell:size=10:weight=bold;0"
+font-1 = "Roboto:size=10:weight=bold;2"
+font-2 = "Noto Sans:size=10:weight=bold;2"
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
+font-5 = "Font Awesome 5 Brands:pixelsize=8;1"
+
+modules-left = i3
+modules-center = date
+modules-right = alsa network battery sysmenu
+
+separator =
+
+spacing = 0
+
+dim-value = 1.0
+
+wm-name = 
+
+locale = 
+
+tray-position = right
+tray-detached = true
+
+tray-maxsize = 16
+
+tray-background = ${root.background}
+
+tray-offset-x = -120
+tray-offset-y = 0
+
+tray-padding = 0
+
+tray-scale = 1.0
+
+enable-ipc = true
+
+click-left = 
+click-middle = 
+click-right =
+scroll-up =
+scroll-down =
+double-click-left =
+double-click-middle =
+double-click-right =
+
+cursor-click = 
+cursor-scroll = 
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+;; Application Settings
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+
+throttle-input-for = 30
+
+screenchange-reload = false
+
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+
+format-foreground = 
+format-background = 
+format-underline =
+format-overline =
+format-spacing =
+format-padding =
+format-margin =
+format-offset =
+
+pseudo-transparency = false
